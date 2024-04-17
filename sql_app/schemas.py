@@ -2,10 +2,10 @@ from pydantic import BaseModel
 
 class ArticleBase(BaseModel):
   title: str
+  published: str 
   url: str 
-  published: str
-  text: str
-  poetry: str | None = None
+  text: str 
+  poetry: str
   
 class ArticleCreate(ArticleBase):
   pass 

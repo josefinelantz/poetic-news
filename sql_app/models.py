@@ -5,7 +5,9 @@ class Article(Base):
   __tablename__ = "articles"
   
   id = Column(Integer, primary_key=True)
-  title = Column(String, unique=True, index=True)
+  title = Column(String, unique=True, index=True),
+  published = Column(String, unique=False),
+  url = Column(String, unique=True),
   text = Column(String, unique=True, index=True)
   poetry = Column(String, unique=True, index=True)
   

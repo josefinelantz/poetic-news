@@ -2,6 +2,8 @@ from pydantic import BaseModel
 
 class ArticleBase(BaseModel):
   title: str
+  url: str 
+  published: str
   text: str
   poetry: str | None = None
   
